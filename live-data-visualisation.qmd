@@ -28,7 +28,7 @@ library(broom)
 
 ## What a waste!
 
-What a Waste is a global project to aggregate data on solid waste management from around the world. This database features the statistics collected through the effort, covering nearly all countries and over 330 cities. Beyond waste generation, there are a long list of additina indicators in this dataset.
+What a Waste is a global project to aggregate data on solid waste management from around the world. This database features the statistics collected through the effort, covering nearly all countries and over 330 cities. Beyond waste generation, there are a long list of additional indicators in this dataset.
 
 -   Source: https://datacatalog.worldbank.org/search/dataset/0039597
 
@@ -95,7 +95,7 @@ Main aesthetic mappings:
 
 ## Scaling
 
-All functions that adapt the scale start with `scale_` followed by the aesthetic to be adapted, e.g. `x_`, and then followed by the type of variable, e.g. `continouous`. So to adapt a continuous scale on an x-axis, the function to use is: `scale_x_continuous()`
+All functions that adapt the scale start with `scale_` followed by the aesthetic to be adapted, e.g. `x_`, and then followed by the type of variable, e.g. `continuous`. So to adapt a continuous scale on an x-axis, the function to use is: `scale_x_continuous()`
 
 ### Axis scales
 
@@ -168,6 +168,8 @@ ggplot(data = global_waste_data_kg_year,
 
 A reference to @fig-plot-waste-gdp.
 
+![Municipal solid waste generation per capita versus GDP per capita, coloured by income group.](figs/plot-waste-generation-gdp.png){#fig-plot-waste-gdp}
+
 ```{r}
 
 # No live coding. Show labels and theme functions and explain.
@@ -191,8 +193,8 @@ ggplot(data = global_waste_data_kg_year,
   scale_color_manual(values = my_colors) +
   labs(title = "Municipal Solid Waste Generation",
        subtitle = "Increasing income results in greater solid waste generation",
-       x = "GDP per capity (USD)",
-       y = "MSW generation pert capity (kg/yr)",
+       x = "GDP per capita (USD)",
+       y = "MSW generation per capita (kg/yr)",
        color = "Income categories",
        shape = "Income categories",
        caption = "Data: What a Waste Global Database."
@@ -232,12 +234,13 @@ Let's add a table of contents, a date, and an author to the document.
 
 You can learn more about the options for HTML files in the Quarto documentation: https://quarto.org/docs/reference/formats/html.html
 
-And to learn more about using Quarton for scholarly writing: https://quarto.org/docs/authoring/title-blocks.html
+And to learn more about using Quarto for scholarly writing: https://quarto.org/docs/authoring/title-blocks.html
 
 # Stage, Commit & Push to GitHub
 
 1.  Open the Git pane in RStudio. It's in the top right corner in a separate tab.
 2.  **Stage** your changes by checking appropriate box next to all files (if you select one file with your mouse, you can then highlight them all with Ctrl + A on your keyboard and check all boxes)
-3.  Write a meaningful commit message (e.g. "Completed homework assignment 1b) in the **Commit message** box
+3.  Write a meaningful commit message (e.g. "Completed week 4 live coding exercise") in the **Commit message** box
 4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
-5.  Go to your course-material GitHub repo and refresh the page. You should see your commit message next to the updated files.
+5.  Click **Push** to send your changes to GitHub.
+6.  Go to your md-04-USERNAME GitHub repo (where USERNAME is your GitHub username) and refresh the page. You should see your commit message next to the updated files.
