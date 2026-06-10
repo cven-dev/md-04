@@ -30,7 +30,7 @@ library(broom)
 
 What a Waste is a global project to aggregate data on solid waste management from around the world. This database features the statistics collected through the effort, covering nearly all countries and over 330 cities. Beyond waste generation, there are a long list of additional indicators in this dataset.
 
--   Source: https://datacatalog.worldbank.org/search/dataset/0039597
+- Source: https://datacatalog.worldbank.org/search/dataset/0039597
 
 ```{r}
 
@@ -86,12 +86,16 @@ global_waste_data_kg_year <- global_waste_data_small |>
 
 Main aesthetic mappings:
 
--   x
--   y
--   color/fill
--   shape
--   size
--   alpha (Transparency)
+- x
+- y
+- color/fill
+- shape
+- size
+- alpha (Transparency)
+
+```{r}
+
+```
 
 ## Scaling
 
@@ -99,15 +103,19 @@ All functions that adapt the scale start with `scale_` followed by the aesthetic
 
 ### Axis scales
 
+```{r}
+
+```
+
 ### Color scales
 
--   scale_color_brewer()
+- scale_color_brewer()
 
 ```{r}
 
 ```
 
--   scale_color_manual()
+- scale_color_manual()
 
 ```{r}
 
@@ -206,9 +214,9 @@ ggplot(data = global_waste_data_kg_year,
 
 Learn more about modeling in R:
 
--   R4DS chapter - https://r4ds.had.co.nz/model-intro.html
--   Book: Statistical Inference via Data Science: A ModernDive into R and the Tidyverse! - https://moderndive.com/
--   R Packages: Tidymodels - https://www.tidymodels.org/
+- R4DS chapter - https://r4ds.had.co.nz/model-intro.html
+- Book: Statistical Inference via Data Science: A ModernDive into R and the Tidyverse! - https://moderndive.com/
+- R Packages: Tidymodels - https://www.tidymodels.org/
 
 https://broom.tidymodels.org/articles/broom.html
 
